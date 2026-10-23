@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "Yeni geliştirdiğimiz antihipertansif molekülü plasebo grubuyla karşılaştıracağız. Orta düzeyde bir etki (d=0.50) bekliyoruz. Tip 1 hata 0.05 ve %95 güç hedefi için iki gruba kaçar hasta almalıyız?",
+    "expected_family": "t2-indep",
+    "expected_params": { "d": 0.5, "alpha": 0.05, "power": 0.95, "tails": 2, "ratio": 1.0 },
+    "expected_n1": 105,
+    "expected_n2": 105,
+    "expected_n_total": 210,
+    "clinical_domain": "Kardiyoloji / Hipertansiyon"
+  },
+  {
+    "id": 2,
+    "question": "Tip 2 diyabetik hastalarda yeni bir insülin duyarlılaştırıcıyı standart metformin tedavisiyle (iki bağımsız grup) kıyaslayacağız. Literatür d=0.80 büyük etki gösteriyor. 0.05 anlamlılık ve %80 güçle kaçar hasta yeterlidir?",
+    "expected_family": "t2-indep",
+    "expected_params": { "d": 0.8, "alpha": 0.05, "power": 0.80, "tails": 2, "ratio": 1.0 },
+    "expected_n1": 26,
+    "expected_n2": 26,
+    "expected_n_total": 52,
+    "clinical_domain": "Endokrinoloji / Diyabet"
+  },
+  {
+    "id": 3,
+    "question": "Majör depresyon hastalarında yeni bir antidepresanın kontrol grubuna göre üstünlüğünü (tek yönlü hipotez) göstermek istiyoruz. Orta etki d=0.5, alfa=0.05 ve %80 güç için hasta sayısı ne olmalı?",
+    "expected_family": "t2-indep",
+    "expected_params": { "d": 0.5, "alpha": 0.05, "power": 0.80, "tails": 1, "ratio": 1.0 },
+    "expected_n1": 50,
+    "expected_n2": 50,
+    "expected_n_total": 100,
+    "clinical_domain": "Psikiyatri"
+  },
+  {
+    "id": 4,
+    "question": "Romatoid artrit tedavisinde biyolojik ajan ile konvansiyonel ilacı karşılaştırıyoruz. Etik kurul gereği ilacı alan hasta sayısının kontrolün 2 katı olmasını (1:2 oran) planlıyoruz. d=0.5, alfa=0.05, güç %80 için grup sayıları nedir?",
+    "expected_family": "t2-indep",
+    "expected_params": { "d": 0.5, "alpha": 0.05, "power": 0.80, "tails": 2, "ratio": 2.0 },
+    "expected_n1": 48,
+    "expected_n2": 96,
+    "expected_n_total": 144,
+    "clinical_domain": "Romatoloji"
+  },
+  {
+    "id": 5,
+    "question": "Onkolojide yeni kemoterapötik ile mevcut protokolün tümör çapı küçülme farkını inceleyeceğiz. Çok küçük bir etki (d=0.20) bekleniyor. Alfa 0.05 ve %80 güç için kaç hasta gerekir?",
+    "expected_family": "t2-indep",
+    "expected_params": { "d": 0.2, "alpha": 0.05, "power": 0.80, "tails": 2, "ratio": 1.0 },
+    "expected_n1": 394,
+    "expected_n2": 394,
+    "expected_n_total": 788,
+    "clinical_domain": "Onkoloji"
+  },
+  {
+    "id": 6,
+    "question": "Aynı hastaların cerrahi operasyon öncesi ve operasyon sonrası sistolik tansiyon değerlerini karşılaştıracağız. Kaç denek gerekir?",
+    "expected_family": "t-paired",
+    "expected_params": null,
+    "expected_n1": null,
+    "expected_n2": null,
+    "expected_n_total": null,
+    "clinical_domain": "Genel Cerrahi (Eşleştirilmiş Ölçüm Ayrımı)"
+  },
+  {
+    "id": 7,
+    "question": "Üç farklı analjezik tedavi kolunun (A kolu, B kolu, C plasebo) post-operatif ağrı skorları ortalamalarını karşılaştırmak istiyoruz.",
+    "expected_family": "anova-oneway",
+    "expected_params": null,
+    "expected_n1": null,
+    "expected_n2": null,
+    "expected_n_total": null,
+    "clinical_domain": "Anesteziyoloji (3 Tedavi Kolu / ANOVA Ayrımı)"
+  },
+  {
+    "id": 8,
+    "question": "Aşılanan ve aşılanmayan iki hasta grubunda COVID-19'a yakalanma oranlarını (yanıt var/yok sıklık tablosu) kıyaslamak istiyoruz.",
+    "expected_family": "chi2-contingency",
+    "expected_params": null,
+    "expected_n1": null,
+    "expected_n2": null,
+    "expected_n_total": null,
+    "clinical_domain": "Enfeksiyon Hastalıkları (Oranlar / Ki-Kare Ayrımı)"
+  },
+  {
+    "id": 9,
+    "question": "Kardiyovasküler mortaliteyi tahmin etmek için yaş, kolesterol, sigara ve BMI gibi çoklu risk faktörlerinin sürekli bağımlı değişken üzerindeki etkisini modellemek istiyoruz.",
+    "expected_family": "multireg-r2",
+    "expected_params": null,
+    "expected_n1": null,
+    "expected_n2": null,
+    "expected_n_total": null,
+    "clinical_domain": "Epidemiyoloji (Çoklu Regresyon Ayrımı)"
+  },
+  {
+    "id": 10,
+    "question": "Hastanemize başvuran hastalarda tansiyon ölçümü yaptık ama tedavi protokolümüz veya grup tasarımımız henüz kesinleşmedi, kararsızım.",
+    "expected_family": "ambiguous",
+    "expected_params": null,
+    "expected_n1": null,
+    "expected_n2": null,
+    "expected_n_total": null,
+    "clinical_domain": "Belirsiz / Eksik Tasarım (Hekime Sorma Senaryosu)"
+  }
+]

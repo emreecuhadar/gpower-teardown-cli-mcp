@@ -1,0 +1,180 @@
+[
+  {
+    "query": "Yeni geliştirdiğimiz antihipertansif molekülü plasebo grubuyla karşılaştıracağız. Orta düzeyde bir etki (d=0.50) bekliyoruz. Tip 1 hata 0.05 ve %95 güç hedefi için iki gruba kaçar hasta almalıyız?",
+    "classification": {
+      "label": "t2-indep",
+      "confidence": 0.95,
+      "rationale": "İki bağımsız grup ortalaması (örneğin ilaç vs plasebo) karşılaştırması."
+    },
+    "timestamp": 1792743428.5118296,
+    "status": "SUCCESS",
+    "mcp_tool": "calculate_sample_size_t2_indep",
+    "mcp_arguments": {
+      "d": 0.5,
+      "alpha": 0.05,
+      "power": 0.95,
+      "tails": 2,
+      "ratio": 1.0
+    },
+    "mcp_result": {
+      "n1": 105,
+      "n2": 105,
+      "n_total": 210,
+      "actual_power": 0.9501,
+      "critical": 1.9714,
+      "df": 208,
+      "ncp": 3.6228
+    },
+    "elapsed_ms": 18.16272735595703
+  },
+  {
+    "query": "Tip 2 diyabetik hastalarda yeni bir insülin duyarlılaştırıcıyı standart metformin tedavisiyle (iki bağımsız grup) kıyaslayacağız. Literatür d=0.80 büyük etki gösteriyor. 0.05 anlamlılık ve %80 güçle kaçar hasta yeterlidir?",
+    "classification": {
+      "label": "t2-indep",
+      "confidence": 0.95,
+      "rationale": "İki bağımsız grup ortalaması (örneğin ilaç vs plasebo) karşılaştırması."
+    },
+    "timestamp": 1792743428.5310378,
+    "status": "SUCCESS",
+    "mcp_tool": "calculate_sample_size_t2_indep",
+    "mcp_arguments": {
+      "d": 0.8,
+      "alpha": 0.05,
+      "power": 0.8,
+      "tails": 2,
+      "ratio": 1.0
+    },
+    "mcp_result": {
+      "n1": 26,
+      "n2": 26,
+      "n_total": 52,
+      "actual_power": 0.8075,
+      "critical": 2.0086,
+      "df": 50,
+      "ncp": 2.8844
+    },
+    "elapsed_ms": 2.9370784759521484
+  },
+  {
+    "query": "Majör depresyon hastalarında yeni bir antidepresanın kontrol grubuna göre üstünlüğünü (tek yönlü hipotez) göstermek istiyoruz. Orta etki d=0.5, alfa=0.05 ve %80 güç için hasta sayısı ne olmalı?",
+    "classification": {
+      "label": "t2-indep",
+      "confidence": 0.95,
+      "rationale": "İki bağımsız grup ortalaması (örneğin ilaç vs plasebo) karşılaştırması."
+    },
+    "timestamp": 1792743428.5350392,
+    "status": "SUCCESS",
+    "mcp_tool": "calculate_sample_size_t2_indep",
+    "mcp_arguments": {
+      "d": 0.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "tails": 1,
+      "ratio": 1.0
+    },
+    "mcp_result": {
+      "n1": 51,
+      "n2": 51,
+      "n_total": 102,
+      "actual_power": 0.8059,
+      "critical": 1.6602,
+      "df": 100,
+      "ncp": 2.5249
+    },
+    "elapsed_ms": 2.4967193603515625
+  },
+  {
+    "query": "Romatoid artrit tedavisinde biyolojik ajan ile konvansiyonel ilacı karşılaştırıyoruz. Etik kurul gereği ilacı alan hasta sayısının kontrolün 2 katı olmasını (1:2 oran) planlıyoruz. d=0.5, alfa=0.05, güç %80 için grup sayıları nedir?",
+    "classification": {
+      "label": "chi2-contingency",
+      "confidence": 0.91,
+      "rationale": "Kategorik yanıt oranlarının karşılaştırılması."
+    },
+    "timestamp": 1792743428.537536,
+    "status": "DIFFERENT_FAMILY",
+    "elapsed_ms": 0.0
+  },
+  {
+    "query": "Onkolojide yeni kemoterapötik ile mevcut protokolün tümör çapı küçülme farkını inceleyeceğiz. Çok küçük bir etki (d=0.20) bekleniyor. Alfa 0.05 ve %80 güç için kaç hasta gerekir?",
+    "classification": {
+      "label": "t2-indep",
+      "confidence": 0.7,
+      "rationale": "Ortalama farkından bahsediliyor ancak grup bağımsızlığı tam açık değil."
+    },
+    "timestamp": 1792743428.537536,
+    "status": "NEEDS_CLARIFICATION",
+    "elapsed_ms": 0.0
+  },
+  {
+    "query": "Aynı hastaların cerrahi operasyon öncesi ve operasyon sonrası sistolik tansiyon değerlerini karşılaştıracağız. Kaç denek gerekir?",
+    "classification": {
+      "label": "t-paired",
+      "confidence": 0.94,
+      "rationale": "Aynı deneklerin tedavi öncesi ve sonrası ölçümlerinin karşılaştırılması."
+    },
+    "timestamp": 1792743428.537536,
+    "status": "DIFFERENT_FAMILY",
+    "elapsed_ms": 0.0
+  },
+  {
+    "query": "Üç farklı analjezik tedavi kolunun (A kolu, B kolu, C plasebo) post-operatif ağrı skorları ortalamalarını karşılaştırmak istiyoruz.",
+    "classification": {
+      "label": "t2-indep",
+      "confidence": 0.95,
+      "rationale": "İki bağımsız grup ortalaması (örneğin ilaç vs plasebo) karşılaştırması."
+    },
+    "timestamp": 1792743428.538581,
+    "status": "SUCCESS",
+    "mcp_tool": "calculate_sample_size_t2_indep",
+    "mcp_arguments": {
+      "d": 0.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "tails": 2,
+      "ratio": 1.0
+    },
+    "mcp_result": {
+      "n1": 64,
+      "n2": 64,
+      "n_total": 128,
+      "actual_power": 0.8015,
+      "critical": 1.979,
+      "df": 126,
+      "ncp": 2.8284
+    },
+    "elapsed_ms": 3.905773162841797
+  },
+  {
+    "query": "Aşılanan ve aşılanmayan iki hasta grubunda COVID-19'a yakalanma oranlarını (yanıt var/yok sıklık tablosu) kıyaslamak istiyoruz.",
+    "classification": {
+      "label": "chi2-contingency",
+      "confidence": 0.91,
+      "rationale": "Kategorik yanıt oranlarının karşılaştırılması."
+    },
+    "timestamp": 1792743428.5424867,
+    "status": "DIFFERENT_FAMILY",
+    "elapsed_ms": 0.0
+  },
+  {
+    "query": "Kardiyovasküler mortaliteyi tahmin etmek için yaş, kolesterol, sigara ve BMI gibi çoklu risk faktörlerinin sürekli bağımlı değişken üzerindeki etkisini modellemek istiyoruz.",
+    "classification": {
+      "label": "multireg-r2",
+      "confidence": 0.93,
+      "rationale": "Çoklu risk faktörlerinin regresyon modeli."
+    },
+    "timestamp": 1792743428.5437534,
+    "status": "DIFFERENT_FAMILY",
+    "elapsed_ms": 0.0
+  },
+  {
+    "query": "Hastanemize başvuran hastalarda tansiyon ölçümü yaptık ama tedavi protokolümüz veya grup tasarımımız henüz kesinleşmedi, kararsızım.",
+    "classification": {
+      "label": "ambiguous",
+      "confidence": 0.5,
+      "rationale": "Soru yeterli klinik detay içermiyor."
+    },
+    "timestamp": 1792743428.5437534,
+    "status": "NEEDS_CLARIFICATION",
+    "elapsed_ms": 0.0
+  }
+]

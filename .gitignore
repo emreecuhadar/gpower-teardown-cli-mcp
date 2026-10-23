@@ -1,0 +1,52 @@
+# G*Power Binary & Decompiled Code (STRICT CLEAN-ROOM ETHICS)
+GPower.exe
+gpower.exe
+*.exe
+*.dll
+*.so
+*.dylib
+*.class
+decompiled/
+ghidra_projects/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
